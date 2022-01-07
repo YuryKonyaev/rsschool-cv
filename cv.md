@@ -17,3 +17,31 @@ So far, everything is very difficult for me, but I do not despair, everything co
 
 - __HTML__
 - __CSS__
+
+# Code Example
+
+```
+let start = Date.now();
+
+let timer = setInterval(function() {
+ 
+  let timePassed = Date.now() - start;
+
+  if (timePassed >= 2000) {
+    clearInterval(timer);
+    return;
+  }
+
+  draw(timePassed);
+
+}, 20);
+
+function draw(timePassed) {
+  train.style.left = timePassed / 5 + 'px';
+}
+```
+
+## Education
+
+- [HTML Academy](https://htmlacademy.ru/)
+- [Code-basics](https://ru.code-basics.com/)
