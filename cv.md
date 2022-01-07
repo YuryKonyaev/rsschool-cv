@@ -6,7 +6,7 @@ __Junior Front-End Developer__
 ## Contacts
 
 - __Email__ konyaevuk@gmail.com
-- __GitHub__ [YuryK](https://github.com/YuryKonyaev)
+- __GitHub__ [YuryKonyaev](https://github.com/YuryKonyaev)
 - __Telegram__ [@yourock_k](https://t.me/yourock_k)
 
 ## About me
