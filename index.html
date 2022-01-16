@@ -11,40 +11,112 @@
 <header class="header">
 	<div class="header-container">
 		<nav class="nav">
-			<ul class="nav-container">
-				<li class="nav-list">
-					<a href="#contacts" class="nav-item">Contacts</a>
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a href="#contacts" class="nav-link">Contacts</a>
 				</li>
-				<li>
-					<a href="#about-me" class="nav-item">About me</a>
+				<li class="nav-item">
+					<a href="#about-me" class="nav-link">About me</a>
 				</li>
-				<li>
-					<a href="#hard-skills" class="nav-item">Hard Skills</a>
+				<li class="nav-item">
+					<a href="#hard-skills" class="nav-link">Hard Skills</a>
 				</li>
-				<li>
-					<a href="#code-example" class="nav-item">Code Example</a>
+				<li class="nav-item">
+					<a href="#code-example" class="nav-link">Code Example</a>
 				</li>
-				<li>
-					<a href="education" class="nav-item">Education</a>
+				<li class="nav-item">
+					<a href="education" class="nav-link">Education</a>
 				</li>
 			</ul>
 		</nav>
 	</div>
 </header>
 <main class="main">
-	<div class="container-main">
-		<section class="section-main"></section>
-		<section></section>
-		<section></section>
-		<section></section>
-		<section></section>
-		<section></section>
+	<div class="profile">
+		<h1 class="name-profile">Konyaev Yury</h1>
+		<p>Junior Front-End Developer</p>
+		<img src="" alt="logo-profile">
+	</div>
+	<div class="main-container">
+		<section class="contacts" id="contacts">
+			<h2>Contacts</h2>
+			<ul class="list-contacts">
+				<li class="item-contacts">
+					Email:
+					<a href="konyaevuk@gmail.com" title="email">konyaevuk@gmail.com</a>
+				</li>
+				<li class="item-contacts">
+					Github:
+					<a href="https://github.com/YuryKonyaev" title="github">YuryK</a>
+				</li>
+				<li class="item-contacts">
+					Telegram:
+					<a href="https://t.me/yourock_k" title="telegram">@yourock_k</a>
+				</li>
+			</ul>
+		</section>
+		<section class="about-me" id="about-me">
+			<h2>About me</h2>
+			<p>Hey! My name is Yury, I want to learn programming,
+				 graphing and animation.
+				 So far, everything is very difficult for me,
+				 but I do not despair, everything comes with experience!
+			</p>
+		</section>
+		<section class="hard-skills" id="hard-skills">
+			<h2>Hard skills</h2>
+			<ul class="hard-skills-list">
+				<li class="hard-skill-items">HTML</li>
+				<li class="hard-skill-items">CSS</li>
+				<li class="hard-skill-items">JavaScript</li>
+			</ul>
+		</section>
+		<section class="code-example" id="code-example">
+			<h2>Code example</h2>
+			<pre>
+				let start = Date.now();
+
+				let timer = setInterval(function() {
+				 
+				  let timePassed = Date.now() - start;
+				
+				  if (timePassed >= 2000) {
+					clearInterval(timer);
+					return;
+				  }
+				
+				  draw(timePassed);
+				
+				}, 20);
+				
+				function draw(timePassed) {
+				  train.style.left = timePassed / 5 + 'px';
+				}
+			</pre>
+		</section>
+		<section class="education" id="education">
+			<h2>Education</h2>
+			<ul class="education-list">
+				<li class="education-item">
+					<a href="https://htmlacademy.ru/">HTML Academy</a>
+				</li>
+				<li class="education-item">
+					<a href="https://ru.code-basics.com/">Code-basics</a>
+				</li>
+			</ul>
+		</section>
 	</div>
 </main>
-<footer>
-	<div>
+<footer class="footer">
+	<div class="footer-container">
 		<div>
-			<a></a>
+			<a href="https://rs.school/js/">Course «JavaScript/Front-end»
+				<img src="https://rs.school/images/rs_school_js.svg" alt="Course «JavaScript/Front-end»">
+			</a>
+		</div>
+		<div>
+			<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github">
+			<a href="https://github.com/YuryKonyaev">Yury Konyaev</a>
 		</div>
 	</div>
 </footer>
